@@ -16,6 +16,10 @@
             color: #333;
             line-height: 1.6;
         }
+        #contact p {
+            line-height: 0.1; /* Adjust line height for <p> elements in the contact section */
+            margin-bottom: 10px; /* Adjust margin to reduce space between paragraphs */
+        }
         header {
             background-color: #2c3e50;
             color: white;
@@ -96,6 +100,7 @@
             padding: 20px;
             text-align: center;
             width: calc(45% - 40px);
+            height: auto;
             display: inline-block;
             vertical-align: top;
         }
@@ -132,6 +137,13 @@
             padding: 5px 10px;
             border-radius: 4px;
         }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+          }
         
     </style>
 </head>
@@ -298,22 +310,51 @@
         <section id="faq">
             <h2 class="section-title">FAQ</h2>
             <div class="section-content" style="text-align: left;">
-                <!-- <p>The NTUAIS Lab is dedicated to research in artificial intelligence and machine learning. Our goal is to develop innovative AI solutions that address real-world problems.</p> -->
+                <ul class="faq-list">
+                    <li>
+                        <strong>Q:</strong> How can I join the NTU AIS Lab?
+                        <br>
+                        <strong>A:</strong> We welcome self-motivated students, including undergraduates and graduates, to join us. If you are interested in the research topics of the lab, please email Professor Chen and include a brief resume. Professor Chen will arrange a short interview.
+                    </li>
+                    <li>
+                        <strong>Q:</strong> What are the research areas of the NTUAIS Lab?
+                        <br>
+                        <strong>A:</strong> Our research focuses on trustworthy machine learning, including robustness, privacy, and fairness.
+                    </li>
+                    <li>
+                        <strong>Q:</strong> How can I learn more about the NTU AIS Lab's research?
+                        <br>
+                        <strong>A:</strong> You can explore our publications and projects on this website.
+                    </li>
+                    <li>
+                        <strong>Q:</strong> I am an undergraduate student. When is the best time for me to join the lab for a project?
+                        <br>
+                        <strong>A:</strong> The sooner, the better. 
+                    </li>
+                    <li>
+                        <strong>Q:</strong> What qualities or skills does the professor expect from students working on their projects?
+                        <br>
+                        <strong>A:</strong> 
+                        The professor expects students to have a genuine desire to learn, be proactive rather than passive, and actively explore, with sufficient background in linear algebra and probability, and ideally, having completed a course in machine learning.
+                    </li>
+                </ul>
             </div>
         </section>
         <section id="contact">
             <h2 class="section-title">Contact Us</h2>
             <div class="section-content" style="text-align: left;">
                 <p><strong>Prof. Shang-Tse Chen</strong></p>
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:stchen@csie.ntu.edu.tw">stchen@csie.ntu.edu.tw</a></p>
-                <p><i class="fas fa-globe"></i> Website: <a href="https://www.csie.ntu.edu.tw/~stchen/" target="_blank">https://www.csie.ntu.edu.tw/~stchen/</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> Professor's Office: NTU CSIE Building 515</p>
-                <p><i class="fas fa-map-marker-alt"></i> Lab Location: NTU CSIE Building 405</p>
+                <p style="margin-left:29px"><i class="fas fa-envelope"></i> Email: <a href="mailto:stchen@csie.ntu.edu.tw">stchen@csie.ntu.edu.tw</a></p>
+                <p style="margin-left:29px"><i class="fas fa-globe"></i> Website: <a href="https://www.csie.ntu.edu.tw/~stchen/" target="_blank">https://www.csie.ntu.edu.tw/~stchen/</a></p>
+                <p style="margin-left:29px"><i class="fas fa-map-marker-alt"></i> Professor's Office: NTU CSIE Building 515</p>
+                <p style="margin-left:29px"><i class="fas fa-map-marker-alt"></i> Lab Location: NTU CSIE Building 405</p>
             </div>
+            <img src="figs/Image.jpg" alt="AISLAB" width="350px" class="center">
         </section>
     </div>
     <footer>
         <p>&copy; 2024 NTU AIS Lab. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
