@@ -1,5 +1,296 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTUAIS Lab</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-family: 'Garamond', serif;
+            font-size: 36px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            margin: 10px 0 0;
+            letter-spacing: 1px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444627;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #16a085;
+            color: #ffffff;
+        }
+        section {
+            padding: 10px 20px;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            flex-direction: column;
+            align-items: left;
+        }
+        .section-title {
+            font-size: 28px;
+            margin-bottom: -10px;
+            color: #2c3e50;
+            font-family: 'Garamond', serif;
+            
+        }
+        .section-content {
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-left: 2.5rem;
+            color: #34495e;
+            font-family: 'Arial', sans-serif;
+            align-items: left!important;
+        }
+        .section-content p {
+            margin-bottom: 1em;
+        }
+        .publication-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            width: calc(45% - 40px);
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .publication-image {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        
+        .publication-card h3 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        
+        .publication-card p {
+            font-size: 16px;
+            color: #555;
+        }
+        
+        .publication-icons {
+            margin-top: 10px;
+        }
+        
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        .conference {
+            font-size: 16px;
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+    </style>
+</head>
 <body>
-Hello!
+    <header>
+        <h1>NTU AIS Lab</h1>
+        <p>National Taiwan University Artificial Intelligence Security Lab</p>
+    </header>
+    <nav>
+        <a href="#welcome">Welcome</a>
+        <a href="#news">News</a>
+        <a href="#team">Team</a>
+        <!-- <a href="#projects">Projects</a> -->
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="welcome">
+            <h2 class="section-title">Welcome to NTUAIS Lab</h2>
+            <div class="section-content">
+                <p>Welcome to the National 
+                    Taiwan University Artificial Intelligence Security Lab. 
+                    Our research centers on trustworthy machine learning, 
+                    focusing on <b> robustness, privacy, and fairness </b>. 
+                    To bridge the current trustworthiness gap in ML, 
+                    it is essential to address these interconnected 
+                    challenges within a cohesive framework. 
+                    This involves developing solutions that consider 
+                    their complex interdependencies, aiming 
+                    to create reliable, secure, and equitable 
+                    machine learning systems, thereby fostering 
+                    greater public trust in the technology.</p>
+            </div>
+        </section>
+        <section id="news">
+            <h2 class="section-title">News</h2>
+            <div class="section-content" style="text-align: left;">
+                <!-- <p>The NTUAIS Lab is dedicated to research in artificial intelligence and machine learning. Our goal is to develop innovative AI solutions that address real-world problems.</p> -->
+                <ul>
+                    <li><strong>Jan. 2024</strong> - One paper accepted to ICLR 2024.</li>
+                    <li><strong>Dec. 2023</strong> - One paper accepted to AAAI 2024.</li>
+                    <li><strong>Nov. 2022</strong> - Jacky Liu receives Garmin Fellowship. Congrats!</li>
+                    <li><strong>Aug. 2021</strong> - I am co-organizing MLSS 2021.</li>
+                    <li><strong>Jul. 2021</strong> - Hung-Jui and Wei-Lun got the Appeir AI Potential Award and the Honorable Mention Award at the NTU CSIE Undergraduate Research Competition, respectively. Congrats!</li>
+                    <li><strong>Jul. 2021</strong> - Wei-Lun receives the MOST Undergraduate Research Grant. Congrats!</li>
+                </ul>
+            </div>
+        </section>
+        <section id="team">
+            <h2 class="section-title">Our Team</h2>
+            <div class="section-content" style="text-align: left;">
+                <h3 style="margin-bottom:0.1rem">Advisor</h3>
+                <table>
+                    <tbody>
+                        <td><strong>Prof. <a href="https://www.csie.ntu.edu.tw/~stchen/">Shang-Tse Chen</a></strong></td>
+                    </tbody>
+                </table>
+                <h3 style="margin-bottom:0.1rem">PhD Students</h3>
+                <table>
+                    <tbody>
+                        <td><a href="https://kungbohan.github.io/">Bo-Han Kung</a></td>
+                        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                        <td><a href="https://hsuansu.com/">Hsuan Su</a></td>
+                    </tbody>
+                </table>
+                <h3 style="margin-bottom:0.1rem">Master Students</h3>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Zhen-Ting Liu</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        <td>Hung-Yeh Chien</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        <td>Yu-Ling Hsu</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        <td>Kuan-Hsun Li</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        <td>Yu-Che Huang</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        <td>Edward Lee</td>
+                    </tr>
+                    <tr>
+                        <td>Bo-Han Lai</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        <td>Yu-Cheng Cheng</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        <td>Kin-Fong Chao</td>
+                    <tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-content">
+                <p>Explore our ongoing and completed projects. [Add details about your projects]</p>
+            </div>
+        </section> -->
+        <!-- <section id="publications">
+            <h2 class="section-title">Publications</h2>
+            <div class="section-content">
+                <p>Read our latest research publications. [Add details about your publications]</p>
+            </div>
+        </section> -->
+        <section id="publications">
+            <h2 class="section-title">Publications</h2>
+            <div class="section-content" style="text-align: left;">
+                <div class="publication-card">
+                    <img src="figs/yuyu24annealing.png" alt="Annealing" class="publication-image">
+                    <h3>Annealing Self-Distillation Rectification Improves Adversarial Training</h3>
+                    <p>Yu-Yu Wu, Hung-Jui Wang, and Shang-Tse Chen</p>
+                    <div class="publication-icons">
+                        <span class="icon">🏠</span>
+                        <span class="icon">📄</span>
+                        <span class="icon">🎥</span>
+                        <span class="icon">💬</span>
+                        <span class="icon">⭐</span>
+                        <span class="conference">ICLR'24</span>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <img src="arcollab.png" alt="ARCollab" class="publication-image">
+                    <h3>ARCollab</h3>
+                    <p>Collaborative Cardiovascular Surgical Planning in Mobile AR</p>
+                    <div class="publication-icons">
+                        <span class="icon">📄</span>
+                        <span class="conference">CHI'24</span>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <img src="wordflow.png" alt="Wordflow" class="publication-image">
+                    <h3>Wordflow</h3>
+                    <p>Social and customizable AI writing assistant!</p>
+                    <div class="publication-icons">
+                        <span class="icon">🏠</span>
+                        <span class="icon">📄</span>
+                        <span class="icon">🎥</span>
+                        <span class="icon">💬</span>
+                        <span class="conference">ACL'24</span>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <img src="tsr.png" alt="Table Structure Recognition Transformer" class="publication-image">
+                    <h3>Table Structure Recognition Transformer</h3>
+                    <p>High-Performance Transformers for TSR Need Early Convolutions.</p>
+                    <div class="publication-icons">
+                        <span class="icon">📄</span>
+                        <span class="conference">TRL@NeurIPS'23</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <p>Get in touch with us. [Add your contact details]</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 NTUAIS Lab. All rights reserved.</p>
+    </footer>
 </body>
 </html>
