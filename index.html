@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTUAIS Lab</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -144,16 +146,17 @@
         <a href="#team">Team</a>
         <!-- <a href="#projects">Projects</a> -->
         <a href="#publications">Publications</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
     </nav>
     <div class="container">
         <section id="welcome">
-            <h2 class="section-title">Welcome to NTUAIS Lab</h2>
+            <h2 class="section-title">Welcome to NTU AIS Lab</h2>
             <div class="section-content">
                 <p>Welcome to the National 
                     Taiwan University Artificial Intelligence Security Lab. 
                     Our research centers on trustworthy machine learning, 
-                    focusing on <b> robustness, privacy, and fairness </b>. 
+                    focusing on <b> robustness, privacy, and fairness</b>. 
                     To bridge the current trustworthiness gap in ML, 
                     it is essential to address these interconnected 
                     challenges within a cohesive framework. 
@@ -162,6 +165,12 @@
                     to create reliable, secure, and equitable 
                     machine learning systems, thereby fostering 
                     greater public trust in the technology.</p>
+                <p>
+                    We are always looking for highly-motivated 
+                    undergraduate and graduate students. 
+                    Please contact us if you are interested 
+                    in our research.
+                </p>
             </div>
         </section>
         <section id="news">
@@ -169,10 +178,12 @@
             <div class="section-content" style="text-align: left;">
                 <!-- <p>The NTUAIS Lab is dedicated to research in artificial intelligence and machine learning. Our goal is to develop innovative AI solutions that address real-world problems.</p> -->
                 <ul>
+                    <li><strong>Jun. 2024</strong> - Congratulations to our undergrad members for getting the awards in 大學部專題展. Pin-Han Huang got the first prize & the Appier prize, Ren-Wei Liang and Weiping Li got the the Vysioneer award.</li>
+                    <li><strong>Mar. 2024</strong> - One paper accepted to CVPR Workshop 2024.</li>
                     <li><strong>Jan. 2024</strong> - One paper accepted to ICLR 2024.</li>
                     <li><strong>Dec. 2023</strong> - One paper accepted to AAAI 2024.</li>
                     <li><strong>Nov. 2022</strong> - Jacky Liu receives Garmin Fellowship. Congrats!</li>
-                    <li><strong>Aug. 2021</strong> - I am co-organizing MLSS 2021.</li>
+                    <li><strong>Aug. 2021</strong> - Prof. Chen co-organized MLSS 2021.</li>
                     <li><strong>Jul. 2021</strong> - Hung-Jui and Wei-Lun got the Appeir AI Potential Award and the Honorable Mention Award at the NTU CSIE Undergraduate Research Competition, respectively. Congrats!</li>
                     <li><strong>Jul. 2021</strong> - Wei-Lun receives the MOST Undergraduate Research Grant. Congrats!</li>
                 </ul>
@@ -242,55 +253,67 @@
                     <h3>Annealing Self-Distillation Rectification Improves Adversarial Training</h3>
                     <p>Yu-Yu Wu, Hung-Jui Wang, and Shang-Tse Chen</p>
                     <div class="publication-icons">
-                        <span class="icon">🏠</span>
+                        <!-- <a href="https://github.com/your-repo" class="icon" target="_blank"><i class="fab fa-github"></i></a> -->
+                        <a href="https://arxiv.org/abs/2305.12118" class="icon" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                        <!-- <span class="icon">🏠</span>
                         <span class="icon">📄</span>
                         <span class="icon">🎥</span>
                         <span class="icon">💬</span>
-                        <span class="icon">⭐</span>
+                        <span class="icon">⭐</span> -->
                         <span class="conference">ICLR'24</span>
                     </div>
                 </div>
                 <div class="publication-card">
-                    <img src="arcollab.png" alt="ARCollab" class="publication-image">
-                    <h3>ARCollab</h3>
-                    <p>Collaborative Cardiovascular Surgical Planning in Mobile AR</p>
+                    <img src="figs/kung24qcrs.png" alt="QCRS" class="publication-image">
+                    <h3>Towards Large Certified Radius in Randomized Smoothing using Quasiconcave Optimization</h3>
+                    <p>Bo-Han Kung, Shang-Tse Chen</p>
                     <div class="publication-icons">
-                        <span class="icon">📄</span>
-                        <span class="conference">CHI'24</span>
+                        <a href="https://github.com/ntuaislab/QCRS" class="icon" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://arxiv.org/abs/2302.00209" class="icon" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                        <span class="conference">AAAI'24</span>
                     </div>
                 </div>
                 <div class="publication-card">
-                    <img src="wordflow.png" alt="Wordflow" class="publication-image">
-                    <h3>Wordflow</h3>
-                    <p>Social and customizable AI writing assistant!</p>
+                    <img src="figs/back_teaser.png" alt="AdvCAPTCHA" class="publication-image">
+                    <h3>Enhancing Targeted Attack Transferability via Diversified Weight Pruning</h3>
+                    <p>Hung-Jui Wang, Yu-Yu Wu, Shang-Tse Chen</p>
                     <div class="publication-icons">
-                        <span class="icon">🏠</span>
-                        <span class="icon">📄</span>
-                        <span class="icon">🎥</span>
-                        <span class="icon">💬</span>
-                        <span class="conference">ACL'24</span>
+                        <!-- <a href="https://github.com/ntuaislab/QCRS" class="icon" target="_blank"><i class="fab fa-github"></i></a> -->
+                        <a href="https://arxiv.org/abs/2208.08677" class="icon" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                        <span class="conference">CVPR workshop'24</span>
                     </div>
                 </div>
                 <div class="publication-card">
-                    <img src="tsr.png" alt="Table Structure Recognition Transformer" class="publication-image">
-                    <h3>Table Structure Recognition Transformer</h3>
-                    <p>High-Performance Transformers for TSR Need Early Convolutions.</p>
+                    <img src="figs/back_teaser.png" alt="AdvCAPTCHA" class="publication-image">
+                    <h3>AdvCAPTCHA: Creating Usable and Secure Audio CAPTCHA with Adversarial Machine Learning</h3>
+                    <p>Hao-Ping (Hank) Lee, Wei-Lun Kao, Hung-Jui Wang, Ruei-Che Chang, Yi-Hao Peng, Fu-Yin Cherng, and Shang-Tse Chen</p>
                     <div class="publication-icons">
-                        <span class="icon">📄</span>
-                        <span class="conference">TRL@NeurIPS'23</span>
+                        <!-- <a href="https://github.com/ntuaislab/QCRS" class="icon" target="_blank"><i class="fab fa-github"></i></a> -->
+                        <a href="https://www.ndss-symposium.org/wp-content/uploads/usec2024-35-paper.pdf" class="icon" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                        <span class="conference">USEC'24</span>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="faq">
+            <h2 class="section-title">FAQ</h2>
+            <div class="section-content" style="text-align: left;">
+                <!-- <p>The NTUAIS Lab is dedicated to research in artificial intelligence and machine learning. Our goal is to develop innovative AI solutions that address real-world problems.</p> -->
             </div>
         </section>
         <section id="contact">
             <h2 class="section-title">Contact Us</h2>
-            <div class="section-content">
-                <p>Get in touch with us. [Add your contact details]</p>
+            <div class="section-content" style="text-align: left;">
+                <p><strong>Prof. Shang-Tse Chen</strong></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:stchen@csie.ntu.edu.tw">stchen@csie.ntu.edu.tw</a></p>
+                <p><i class="fas fa-globe"></i> Website: <a href="https://www.csie.ntu.edu.tw/~stchen/" target="_blank">https://www.csie.ntu.edu.tw/~stchen/</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Professor's Office: NTU CSIE Building 515</p>
+                <p><i class="fas fa-map-marker-alt"></i> Lab Location: NTU CSIE Building 405</p>
             </div>
         </section>
     </div>
     <footer>
-        <p>&copy; 2024 NTUAIS Lab. All rights reserved.</p>
+        <p>&copy; 2024 NTU AIS Lab. All rights reserved.</p>
     </footer>
 </body>
 </html>
