@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NTUAIS Lab</title>
+    <title>NTU AIS Lab</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link to Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to Noto Sans TC -->
+    <meta name="description" content="NTU AIS Lab, NTU, 台大, 臺大, 人工智慧安全實驗室, AI Security Lab, Shang-Tse Chen, 臺大資工, NTU AISLab, 陳尚澤">
+    <meta name="keywords" content="NTU AIS Lab, NTU, 台大, 臺大, 人工智慧安全實驗室, AI Security Lab, Shang-Tse Chen, 臺大資工, NTU AISLab, 陳尚澤">
+    <meta name="author" content="NTU AIS Lab">
+    <meta name="google-site-verification" content="n3-PwWyE7iUMUYBanpcz0aM-WcIMYNO23p1Sag8FYWk" />
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -21,8 +26,9 @@
             margin-bottom: 10px; /* Adjust margin to reduce space between paragraphs */
         }
         header {
-            background-color: #2c3e50;
-            color: white;
+            background: url('figs/background1.png') no-repeat center center;
+            background-size: cover;
+            color: darkblue;
             padding: 30px 0;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -32,17 +38,32 @@
             font-size: 36px;
             margin: 0;
             letter-spacing: 2px;
+            font-weight: bold;
         }
         header p {
             font-family: 'Arial', sans-serif;
             font-size: 18px;
             margin: 10px 0 0;
             letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .logo {
+            margin-right: 20px; /* Adjust the spacing as needed */
+            margin-top: 9px;
+            margin-bottom: -25px;
+        }
+        
+        .logo img {
+            height: 60px; /* Adjust the size as needed */
+        }
+        .chinese-font {
+            font-family: 'Noto Sans TC', sans-serif; /* Apply Noto Sans TC to the Chinese text */
+            font-size: 18px; /* Adjust the size as needed */
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444627;
+            background-color: #402E7A;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav a {
@@ -53,7 +74,7 @@
             transition: background-color 0.3s, color 0.3s;
         }
         nav a:hover {
-            background-color: #16a085;
+            background-color: #4B70F5;
             color: #ffffff;
         }
         section {
@@ -175,8 +196,21 @@
 </head>
 <body>
     <header>
+        <div class="header-content">
+            <div>
+                <h1>NTU AIS Lab</h1>
+                <p>National Taiwan University Artificial Intelligence Security Lab</p>
+                <p class="chinese-font">臺灣大學 人工智慧安全實驗室 陳尚澤教授</p>
+            </div>
+            <div class="logo">
+                <img src="figs/logo_ntu.png" alt="NTU Logo">
+            </div>
+        </div>
+        <!-- <div class="logo">
+            <img src="images/logo.png" alt="NTUAIS Lab Logo">
+        </div>
         <h1>NTU AIS Lab</h1>
-        <p>National Taiwan University Artificial Intelligence Security Lab</p>
+        <p>National Taiwan University Artificial Intelligence Security Lab</p> -->
     </header>
     <nav>
         <a href="#welcome">Welcome</a>
@@ -189,7 +223,7 @@
     </nav>
     <div class="container">
         <section id="welcome">
-            <h2 class="section-title">Welcome to NTU AIS Lab</h2>
+            <h2 class="section-title">⚖️Welcome to NTU AIS Lab</h2>
             <div class="section-content">
                 <p>Welcome to the National 
                     Taiwan University Artificial Intelligence Security Lab. 
@@ -212,7 +246,7 @@
             </div>
         </section>
         <section id="news">
-            <h2 class="section-title">News</h2>
+            <h2 class="section-title">⚖️News</h2>
             <div class="section-content" style="text-align: left;">
                 <!-- <p>The NTUAIS Lab is dedicated to research in artificial intelligence and machine learning. Our goal is to develop innovative AI solutions that address real-world problems.</p> -->
                 <ul>
@@ -228,45 +262,53 @@
             </div>
         </section>
         <section id="team">
-            <h2 class="section-title">Our Team</h2>
+            <h2 class="section-title">⚖️Our Team</h2>
             <div class="section-content" style="text-align: left;">
                 <h3 style="margin-bottom:0.1rem">Advisor</h3>
                 <table>
                     <tbody>
-                        <td><strong>Prof. <a href="https://www.csie.ntu.edu.tw/~stchen/">Shang-Tse Chen</a></strong></td>
+                        <td><strong>👑Prof. <a href="https://www.csie.ntu.edu.tw/~stchen/">Shang-Tse Chen</a></strong></td>
                     </tbody>
                 </table>
                 <h3 style="margin-bottom:0.1rem">PhD Students</h3>
                 <table>
                     <tbody>
-                        <td><a href="https://kungbohan.github.io/">Bo-Han Kung</a></td>
+                        <td><a href="https://kungbohan.github.io/">👨‍🎓Bo-Han Kung</a></td>
                         <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-                        <td><a href="https://hsuansu.com/">Hsuan Su</a></td>
+                        <td><a href="https://hsuansu.com/">👨‍🎓Hsuan Su</a></td>
                     </tbody>
                 </table>
                 <h3 style="margin-bottom:0.1rem">Master Students</h3>
                 <table>
                     <tbody>
                     <tr>
-                        <td>Zhen-Ting Liu</td>
+                        <td>👨‍🎓Zhen-Ting Liu</td>
                         <td>&nbsp&nbsp&nbsp&nbsp</td>
-                        <td>Hung-Yeh Chien</td>
+                        <td>👨‍🎓Hung-Yeh Chien</td>
                         <td>&nbsp&nbsp&nbsp&nbsp</td>
-                        <td>Yu-Ling Hsu</td>
+                        <td>👨‍🎓Yu-Ling Hsu</td>
                         <td>&nbsp&nbsp&nbsp&nbsp</td>
-                        <td>Kuan-Hsun Li</td>
+                        <td>👨‍🎓Kuan-Hsun Li</td>
                         <td>&nbsp&nbsp&nbsp&nbsp</td>
-                        <td>Yu-Che Huang</td>
-                        <td>&nbsp&nbsp&nbsp&nbsp</td>
-                        <td>Edward Lee</td>
+                        <td>👨‍🎓Yu-Che Huang</td>
                     </tr>
                     <tr>
-                        <td>Bo-Han Lai</td>
+                        <td>👨‍🎓Edward Lee</td>
                         <td>&nbsp&nbsp&nbsp&nbsp</td>
-                        <td>Yu-Cheng Cheng</td>
+                        <td>👨‍🎓Bo-Han Lai</td>
                         <td>&nbsp&nbsp&nbsp&nbsp</td>
-                        <td>Kin-Fong Chao</td>
+                        <td>👨‍🎓Yu-Cheng Cheng</td>
+                        <td>&nbsp&nbsp&nbsp&nbsp</td>
+                        <td>👨‍🎓Kin-Fong Chao</td>
                     <tr>
+                    </tbody>
+                </table>
+                <h3 style="margin-bottom:0.1rem">Research Assistant</h3>
+                <table>
+                    <tbody>
+                        <td>👨‍🎓Jun-Jie Wang</td>
+                        <!-- <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td> -->
+                        <!-- <td><a href="https://hsuansu.com/">Hsuan Su</a></td> -->
                     </tbody>
                 </table>
             </div>
@@ -284,7 +326,7 @@
             </div>
         </section> -->
         <section id="publications">
-            <h2 class="section-title">Publications</h2>
+            <h2 class="section-title">⚖️Publications</h2>
             <div class="section-content" id="paper" style="text-align: left;">
                 <div class="publication-card">
                     <img src="figs/yuyu24annealing.png" alt="Annealing" class="publication-image">
@@ -304,7 +346,7 @@
                 <div class="publication-card">
                     <img src="figs/kung24qcrs.png" alt="QCRS" class="publication-image">
                     <h3>Towards Large Certified Radius in Randomized Smoothing using Quasiconcave Optimization</h3>
-                    <p>Bo-Han Kung, Shang-Tse Chen</p>
+                    <p>Bo-Han Kung and Shang-Tse Chen</p>
                     <div class="publication-icons">
                         <a href="https://github.com/ntuaislab/QCRS" class="icon" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://arxiv.org/abs/2302.00209" class="icon" target="_blank"><i class="fas fa-file-pdf"></i></a>
@@ -314,7 +356,7 @@
                 <div class="publication-card">
                     <img src="figs/back_teaser.png" alt="AdvCAPTCHA" class="publication-image">
                     <h3>Enhancing Targeted Attack Transferability via Diversified Weight Pruning</h3>
-                    <p>Hung-Jui Wang, Yu-Yu Wu, Shang-Tse Chen</p>
+                    <p>Hung-Jui Wang, Yu-Yu Wu, and Shang-Tse Chen</p>
                     <div class="publication-icons">
                         <!-- <a href="https://github.com/ntuaislab/QCRS" class="icon" target="_blank"><i class="fab fa-github"></i></a> -->
                         <a href="https://arxiv.org/abs/2208.08677" class="icon" target="_blank"><i class="fas fa-file-pdf"></i></a>
@@ -334,7 +376,7 @@
             </div>
         </section>
         <section id="faq">
-            <h2 class="section-title">FAQ</h2>
+            <h2 class="section-title">⚖️FAQ</h2>
             <div class="section-content" style="text-align: left;">
                 <ul class="faq-list">
                     <li>
@@ -367,7 +409,7 @@
             </div>
         </section>
         <section id="contact">
-            <h2 class="section-title">Contact Us</h2>
+            <h2 class="section-title">⚖️Contact Us</h2>
             <div class="section-content" style="text-align: left;">
                 <p><strong>Prof. Shang-Tse Chen</strong></p>
                 <p style="margin-left:29px"><i class="fas fa-envelope"></i> Email: <a href="mailto:stchen@csie.ntu.edu.tw">stchen@csie.ntu.edu.tw</a></p>
