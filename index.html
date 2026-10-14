@@ -187,14 +187,43 @@
             padding: 5px 10px;
             border-radius: 4px;
         }
-
+        
         .center {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 70%;
-          }
+        }
         
+        .lab-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+            gap: 15px;
+            justify-items: center;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        
+        .lab-gallery img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        /* Tablet */
+        @media (max-width: 768px) {
+            .lab-gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        /* Mobile */
+        @media (max-width: 480px) {
+            .lab-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     </style>
 </head>
 <body background="figs/marble.png">
