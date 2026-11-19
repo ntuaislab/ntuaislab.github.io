@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTU AIS Lab</title>
+    <link rel="icon" type="image/png" href="figs/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link to Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to Noto Sans TC -->
     <meta name="description" content="NTU AIS Lab, NTU, 台大, 臺大, 人工智慧安全實驗室, AI Security Lab, Shang-Tse Chen, 臺大資工, NTU AISLab, 陳尚澤">
@@ -48,11 +49,16 @@
         .logo {
             margin-right: 20px; /* Adjust the spacing as needed */
             margin-top: 9px;
-            margin-bottom: -25px;
+            margin-bottom: -15px;
         }
         
         .logo img {
             height: 60px; /* Adjust the size as needed */
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+        .logo img.ais-logo {
+            height: 80px; /* Larger since the logo contains text */
         }
         .chinese-font {
             font-family: 'Noto Sans TC', sans-serif; /* Apply Noto Sans TC to the Chinese text */
@@ -234,6 +240,7 @@
             </div>
             <div class="logo">
                 <img src="figs/logo_ntu.png" alt="NTU Logo">
+                <img src="figs/aislogo.png" alt="NTU AIS Lab Logo" class="ais-logo">
             </div>
         </div>
         <!-- <div class="logo">
